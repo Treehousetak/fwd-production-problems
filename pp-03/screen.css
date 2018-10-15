@@ -13,8 +13,9 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
 #three,
 #two,
 #one {
+  height: 100vw;
   color: white;
-  
+
 }
 #three {
   background-color: purple;
@@ -30,18 +31,21 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
 /* ==== LAYOUT STYLES ==== */
 #content {
 display: flex;
-flex-direction: column;
+flex-direction: row;
 flex-wrap: wrap;
 }
 
 #three{
   order: 3;
+  flex: auto;
 }
 #two{
   order: 2;
+  flex: auto;
 }
 #one {
   order: 1;
+  flex: auto;
 }
 
 @media screen and (min-width: 600px) {
@@ -49,19 +53,34 @@ flex-wrap: wrap;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: flex-end;
 }
 #three{
-  flex-grow: 10;
+  height: 10vw;
+  width: 10vw;
+
+}
+#two{
+  height: 10vw;
+  width: 10vw;
+
+}
+#one{
+  height: 10vw;
+  width: 10vw;
 
 }
 
 }
 
 @media screen and (min-width: 800px) {
+  #content{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  }
   #three,
   #two,
   #one {
-
-
+    height: 100vw;
+    width: 100vw;
 }
