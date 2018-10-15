@@ -10,10 +10,15 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
 /* ===== BASE STYLES ===== */
 
 /* ==== MODULAR STYLES === */
-#three,
+#three{
+  height: 400vw;
+  width: 400vw;
+}
 #two,
 #one {
   color: white;
+  height: 10vw;
+  width: 40vw;
 }
 #three {
   background-color: purple;
@@ -30,8 +35,9 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
 #content {
 
 display: flex;
-flex-direction: column;
-height: 
+flex-direction: row;
+flex-wrap: wrap;
+
 }
 
 #three{
