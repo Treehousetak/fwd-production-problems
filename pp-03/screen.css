@@ -29,12 +29,22 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
 /* ==== LAYOUT STYLES ==== */
 #content {
 
+display: flex;
+flex-direction: column;
+height: 
 }
 
-#three,
-#two,
-#one {
+#three{
+  order: 3;
 
+}
+#two{
+  flex: auto;
+  order: 2;
+}
+#one {
+  flex: auto;
+  order: 1;
 }
 
 @media screen and (min-width: 600px) {
