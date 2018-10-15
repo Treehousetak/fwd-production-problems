@@ -55,19 +55,17 @@ flex-wrap: wrap;
 }
 #three{
   height: 50vw;
-  width: 50vw;
-  flex:5;
-
+  width: 100vw;
 }
+
 #two{
   height: 50vw;
   width: 50vw;
-
 }
+
 #one{
   height: 50vw;
   width: 50vw;
-
 }
 
 }
