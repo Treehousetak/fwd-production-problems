@@ -10,17 +10,11 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
 /* ===== BASE STYLES ===== */
 
 /* ==== MODULAR STYLES === */
-#three{
-  color: white;
-  height: 100vw;
-  width: 100vw;
-}
+#three,
 #two,
 #one {
   color: white;
-  height: 10vw;
-  width: 10vw;
-
+  
 }
 #three {
   background-color: purple;
@@ -35,30 +29,39 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
 
 /* ==== LAYOUT STYLES ==== */
 #content {
-
 display: flex;
-flex-direction: row;
+flex-direction: column;
 flex-wrap: wrap;
-
 }
 
 #three{
   order: 3;
-
 }
 #two{
-  flex: auto;
   order: 2;
 }
 #one {
-  flex: auto;
   order: 1;
 }
 
 @media screen and (min-width: 600px) {
+#content{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+#three{
+  flex-grow: 10;
+
+}
 
 }
 
 @media screen and (min-width: 800px) {
+  #three,
+  #two,
+  #one {
+
 
 }
