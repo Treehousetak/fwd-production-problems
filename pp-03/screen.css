@@ -11,14 +11,16 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
 
 /* ==== MODULAR STYLES === */
 #three{
-  height: 400vw;
-  width: 400vw;
+  color: white;
+  height: 100vw;
+  width: 100vw;
 }
 #two,
 #one {
   color: white;
   height: 10vw;
-  width: 40vw;
+  width: 10vw;
+
 }
 #three {
   background-color: purple;
