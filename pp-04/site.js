@@ -2,12 +2,12 @@ var doorbell = new Audio('media/doorbell.mp3');
 function ringDoorbell() {
   doorbell.play();
 }
-var button = document.createElement("")
+
 
 document.addEventListener('DOMContentLoaded', function () {
-  
-
-  doorbell.addEventListener('click', function) {
+  console.log("DOM Has loaded");
+  var bell = document.querySelector('#bell');
+  bell.addEventListener("click", function() {
     doorbell.play();
-  }
-}
+  });
+});
