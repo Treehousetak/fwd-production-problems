@@ -1,13 +1,12 @@
-var doorbell = new Audio('media/doorbell.mp3');
 function ringDoorbell() {
+  var doorbell = new Audio('media/doorbell.mp3');
   doorbell.play();
 }
-
-
 document.addEventListener('DOMContentLoaded', function () {
   console.log("DOM Has loaded");
-  var bell = document.querySelector('#bell');
+  var bell = document.querySelector('#ezbell');
   bell.addEventListener("click", function() {
-    doorbell.play();
+    console.log("click");
+    ringDoorbell();
   });
 });
