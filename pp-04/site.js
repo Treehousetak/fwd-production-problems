@@ -1,6 +1,13 @@
+var doorbell = new Audio('media/doorbell.mp3');
 function ringDoorbell() {
-  var doorbell = new Audio('media/doorbell.mp3');
   doorbell.play();
 }
-document.querySelector("audioplay").addEventListener("click,ringDoorbell")
-document.querySelector("#doorbell").innerHTML = ""
+var button = document.createElement("")
+
+document.addEventListener('DOMContentLoaded', function () {
+  
+
+  doorbell.addEventListener('click', function) {
+    doorbell.play();
+  }
+}
