@@ -3,14 +3,14 @@
 //  called:
 
 var x = 5;
-
+x === window.x;
 function double(num) {
   x = num - 1;
   return x;
 }
 
-double(6);
-console.log('The value of x is:', x, 'It should be 5.');
+window.double(6);
+console.log('The value of x is:', window.x, 'It should be 5.');
 
 //  2. Rewrite the corrected JavaScript above as a self-executing
 //  anonymous function that does not pollute the global
