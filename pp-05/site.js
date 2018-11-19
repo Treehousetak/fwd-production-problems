@@ -44,3 +44,11 @@ function addTwo(x) {
 
 console.log(addTwo(4)); // 6
 console.log(x); // should be 5 if you corrected the double() function above
+
+//* This function does not change the global variable x because when you are calling on the
+// addTwo(x) function and replacing the x with the value of your choice then you are not changing the global variable.
+// The reason for this is because everything inside the function is local and not global. So all the variable assignments
+// inside it are local to that function only and thus are only subjected to change if told to do so inside the function.
+// When called on the function then the function runs and it returns the given x value local to that function. So,
+// since you called on the function to output on the console log then it outputs the local result of that function
+// in the console but the global x variable stays the same. 
